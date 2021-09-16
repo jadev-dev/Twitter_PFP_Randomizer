@@ -1,0 +1,35 @@
+---
+bio:
+   enabled: True
+   use_file: True
+   file_name: "./resources/bio_template.txt"
+   # only gets used if you disable use_file
+   bio_text: ~
+   # disable length checking (Twitter's limit is 160 characters)
+   length_override: False
+
+display_name:
+   enabled: True
+   name: ""
+   # append a random character to your name, specify weights in an array
+   punctuation:
+      enabled: True
+      marks: ['!', '.', '~', '?']
+      weights: [1, 1, 1, 1]
+   # pick a random line from a text file to append to your name
+   spice:
+      enabled: True
+      spice_file: "./resources/adjectives.txt"
+   # disable length checking (Twitter's limit is 50 characters)
+   length_override: False
+
+images:
+   enabled: True
+   # if false, will give the most recent artist a weight of zero
+   allow_artist_repeats: False
+   image_directory: "./resources/images/"
+   pools:
+      example_pool:
+         artist_account: "@example"
+         subdirectory: "example"
+         weight: 1
