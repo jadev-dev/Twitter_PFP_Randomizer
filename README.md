@@ -1,4 +1,4 @@
-# Twitter_PFP_Randomizer
+# Twitter PFP Randomizer
 A configurable script that will rotate different parts of your twitter profile
 
 Still very much a work in progress, made for personal use. 
